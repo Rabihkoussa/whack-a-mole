@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #scoreboard { font-size: 24px; margin: 20px; }
+        #difficulty { margin: 20px; }
+        .mole { display: inline-block; width: 100px; height: 100px; background-color: brown; border-radius: 50%; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Whack-a-Mole Game</h1>
+    <div id="scoreboard">Score: <span id="score">0</span></div>
+    <div id="difficulty">
+        <label for="difficulty-select">Choose Difficulty:</label>
+        <select id="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div id="game-area">
+        <!-- Mole elements will be generated here -->
+        <div class="mole"></div>
+        <div class="mole"></div>
+        <div class="mole"></div>
+    </div>
+    <script>
+        let score = 0;
+        document.getElementById('difficulty-select').addEventListener('change', function() {
+            // Difficulty change logic here
+        });
+        // Add game logic here
+    </script>
+</body>
+</html>
